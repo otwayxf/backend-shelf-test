@@ -1,5 +1,5 @@
 const { defineConfig } = require("@vue/cli-service");
-const path = require('path');
+const path = require("path");
 
 /**
  *  根据vue cli规定，当前文件为vue的配置文件
@@ -11,10 +11,10 @@ module.exports = defineConfig({
   configureWebpack: {
     resolve: {
       alias: {
-        Assets: path.resolve(__dirname, 'src/assets/'),
-        Components: path.resolve(__dirname, 'src/components/'),
-        iews: path.resolve(__dirname, 'src/views/')
-      }
-    }
-  }
+        Assets: path.resolve(__dirname, "src/assets/"),
+        Components: path.resolve(__dirname, "src/components/"),
+        iews: path.resolve(__dirname, "src/views/"),
+      },
+    },
+  },
 });
