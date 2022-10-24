@@ -1,5 +1,16 @@
 # backend-shelf-test
 
+## 技术栈
+```
+vue3
+vue/cli5
+element plus
+vuex
+router
+axios
+eslint
+```
+
 ## Project setup
 ```
 yarn install
