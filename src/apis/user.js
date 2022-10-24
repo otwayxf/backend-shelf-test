@@ -1,9 +1,8 @@
 // 使用
-export function getInfo() {
-  console.log(window.$http);
-//   return window.$http({
-//     url: "/user/info",
-//     method: "get",
-//     params
-//   });
+export function login() {
+  return window.$http({
+    url: "/login",
+    method: "get",
+    params: { username: "18342912040", password: "123456" }
+  });
 }

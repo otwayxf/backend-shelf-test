@@ -15,7 +15,7 @@
 
 <script>
 import HelloWorld from "./components/HelloWorld.vue"
-import { getInfo } from "./apis/user"
+import { login } from "./apis/user"
 
 export default {
   name: "App",
@@ -24,7 +24,7 @@ export default {
   },
   created() {
     console.log(process.env.NODE_ENV)
-    getInfo()
+    login()
   }
 }
 </script>

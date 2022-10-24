@@ -1,12 +1,13 @@
 import axios from "axios"
 // import { createApp } from "vue";
-import { Message } from "element-plus";
+import { ElMessage } from "element-plus";
 import store from "../store"
 // import { getToken } from "@/utils/auth"
 
+console.log(process.env.VUE_APP_LOCLA_URL);
 // 创建axios实例
 const service = axios.create({
-  baseURL: process.env.BASE_URL_API, // api的base_url
+  baseURL: process.env.VUE_APP_LOCLA_URL, // api的base_url
   timeout: 5000 // 请求超时时间
 })
 
@@ -55,7 +56,7 @@ service.interceptors.response.use(
   //     }
   error => {
     console.log("err" + error)// for debug
-    Message({
+    ElMessage({
       message: error.message,
       type: "error",
       duration: 5 * 1000
